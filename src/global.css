@@ -18,7 +18,7 @@ body{
 }
 a{text-decoration: none !important;}
  
-h1,h2,h3,h4,h5,h6,p,a,button{
+h1,h2,h3,h4,h5,h6,p,a,button,label{
     font-weight: 400;
     font-family: 'Nunito', sans-serif;
 }
@@ -60,6 +60,7 @@ h1{
     text-decoration: none !important;
     cursor: pointer;
     border: none;
+    outline: none;
 }
 .btn-primary{
     background-color: var(--primary-color);
@@ -70,4 +71,8 @@ h1{
 }
 .btn-primary:hover{
     box-shadow: var(--primary-shadow);
+}
+
+*,::before,::after{
+    box-sizing: border-box;
 }

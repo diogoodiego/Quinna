@@ -16,6 +16,18 @@ function CreateAccount() {
                     </div>
 
                     <h1 className="title">Create account</h1>
+                    <div className="form-div">
+                        <input type="text" required/>
+                        <label htmlFor="">Name</label>
+                    </div>
+                    <div className="form-div">
+                        <input type="text" required/>
+                        <label htmlFor="">Email</label>
+                    </div>
+                    <div className="form-div">
+                        <input type="password" required/>
+                        <label htmlFor="">Password</label>
+                    </div>
 
 
                     <button className="btn btn-primary">Sign up</button>
