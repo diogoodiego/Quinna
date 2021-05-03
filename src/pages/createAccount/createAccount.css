@@ -1,0 +1,29 @@
+#create-account{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+}
+#create-account .form-area{
+    grid-column: span 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#create-account .side{
+    grid-column: span 7;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#create-account .side img{
+    height: 80vh;
+    max-width: 80%;
+}
+
+#create-account .logo img{
+    height: 48px;
+}
+#create-account .title{
+    color: var(--primary-color);
+}
