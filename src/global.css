@@ -9,6 +9,7 @@ body{
     background-color: #fff;
     margin: 0;
     padding: 0;
+    font-family: 'Nunito', sans-serif;
 }
 :root{
     --primary-color: #F26680;
@@ -20,7 +21,6 @@ a{text-decoration: none !important;}
  
 h1,h2,h3,h4,h5,h6,p,a,button,label{
     font-weight: 400;
-    font-family: 'Nunito', sans-serif;
 }
 h1{
     font-weight: 900;
@@ -47,6 +47,9 @@ h1{
 .d-none{
     display: none;
 }
+.text-white{
+    color: #fff;
+}
 
 /* BUTTONS */
 
@@ -60,19 +63,30 @@ h1{
     text-decoration: none !important;
     cursor: pointer;
     border: none;
-    outline: none;
+    outline: none0;
 }
 .btn-primary{
     background-color: var(--primary-color);
     color: #fff;
-    border-radius: .5ch;
+    border-radius: .3ch;
     font-size: clamp(1rem, 2.5vw, 1.2rem);
     padding: .4rem 2.4rem;
 }
 .btn-primary:hover{
     box-shadow: var(--primary-shadow);
 }
-
+.btn-secondary{
+    background:none;
+    border: solid 1px #fff;
+    border-radius: .3ch;
+    color: #fff;
+    padding: .4rem 2.4rem;
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
+}
+.btn-secondary:hover{
+    background-color: #fff;
+    color: var(--primary-color);
+}
 *,::before,::after{
     box-sizing: border-box;
 }

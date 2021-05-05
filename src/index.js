@@ -2,12 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import "./global.css";
 
-import {CreateAccount as App} from './pages';
+import Routes from './routes';
 
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Routes />
   </React.StrictMode>,
   document.getElementById('root')
 );

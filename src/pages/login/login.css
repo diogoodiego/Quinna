@@ -1,40 +1,46 @@
-#create-account{
+#login{
+    width: 100vw;
+    height: 100vh;
     display: grid;
     grid-template-columns: repeat(12,1fr);
 }
-#create-account .form-area{
-    grid-column: span 5;
+#login .main{
+    grid-column: span 6;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
 }
-#create-account .side{
-    grid-column: span 7;
+#login .side{
+    grid-column: span 6;
     background-color: var(--primary-color);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
 }
-#create-account .side img{
-    max-height: 60%;
-    max-width: 70%;
+#login .side img{
+    max-width: 80%;
 }
-#create-account .logo img{
-    height: 48px;
+#login .form{
+    grid-column: span 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
 }
-#create-account .title{
+#login .title{
     color: var(--primary-color);
 }
 
-#create-account .form-div{
+#login .form-div{
     position:relative;
     height: 44px;
-    width: clamp(60%,2.5vw,40%);
+    width: clamp(50%,1vw,30%);
     margin-bottom:1.5em ;
 }
-#create-account .form-div input{
+#login .form-div input{
     position: absolute;
     top: 0;
     left: 0;
@@ -48,7 +54,7 @@
     transition: all ease-in-out .3s;
     z-index: 1;
 }
-#create-account .form-div label{
+#login .form-div label{
     position: absolute;
     top:50%;
     margin:auto;
@@ -62,10 +68,10 @@
     padding: 0 .5rem;
     user-select: none;
 }
-#create-account .form-div input:focus{
+#login .form-div input:focus{
     border: 1px solid var(--primary-color);
 }
-#create-account .form-div input:focus ~ label,#create-account .form-div input:valid ~ label{
+#login .form-div input:focus ~ label,#create-account .form-div input:valid ~ label{
     top: 0;
     font-size: .8rem;
     z-index: 10;
